@@ -4,7 +4,12 @@
 // All array items are of the type bool (true or false). 
 
 function countTrue(arr) {
-	
+    let t = 0
+    let f = 0
+    arr.forEach(val => {
+        val === true ? t++ : f++
+    })
+    return t
 } 
 
 console.log(countTrue([true, false, false, true, false]), 2)
